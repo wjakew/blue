@@ -1,0 +1,27 @@
+/* This file is used to define the styles for the theme */
+
+/* Define text styles */
+H1{
+    color: #002244;
+    font-family: Monospace;
+}
+Paragraph{
+    color: #002244;
+    font-family: Monospace;
+}
+.text{
+    color: #002244;
+    font-family: Monospace;
+}
+
+/* Define styles for the page */
+.page{
+    background-color: #6699CC;
+}
+
+/* Define styles for the components */
+.button{
+    color: #002244;
+    font-family: Monospace;
+    border: 1px solid #002244;
+}
