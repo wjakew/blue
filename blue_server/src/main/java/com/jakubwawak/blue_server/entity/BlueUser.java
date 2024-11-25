@@ -28,6 +28,7 @@ public class BlueUser {
     private Timestamp userRegistrationDate;
     private String userDescription;
     private String userPhotoUrl;
+    private String telephone;
 
     /**
      * Constructor
@@ -165,5 +166,13 @@ public class BlueUser {
 
     public String getUserPhotoUrl() {
         return userPhotoUrl;
+    }
+
+    public void setTelephone(String telephone) {
+        this.telephone = telephone;
+    }
+
+    public String getTelephone() {
+        return telephone;
     }
 }

@@ -12,6 +12,70 @@ Blue Server is a server application designed for storing blue notes. It provides
 
 - tba - still in development
 
+## REST Endpoints
+
+This section documents the available REST endpoints for user account management in the application.
+
+### User Account Endpoints
+
+#### Create User Account
+
+- **Endpoint:** `/api/users/create`
+- **Method:** `POST`
+- **Request Body:**
+  ```json
+  {
+      "email": "user@example.com",
+      "password": "yourPassword",
+      "telephone": "123456789"
+  }
+  ```
+- **Response:**
+  - **Success:**
+    ```json
+    {
+        "status": "Success",
+        "message": "User account created successfully."
+    }
+    ```
+  - **Error:**
+    ```json
+    {
+        "status": "Error",
+        "message": "Email, password, and telephone are required."
+    }
+    ```
+
+#### Disable User Account
+
+- **Endpoint:** `/api/users/disable`
+- **Method:** `POST`
+- **Request Body:**
+  ```json
+  {
+      "email": "user@example.com"
+  }
+  ```
+- **Response:**
+  - **Success:**
+    ```json
+    {
+        "status": "Success",
+        "message": "User account disabled successfully."
+    }
+    ```
+  - **Error:**
+    ```json
+    {
+        "status": "Error",
+        "message": "Email is required."
+    }
+    ```
+
+### Notes
+- Ensure that the email provided for creating or disabling a user account is unique and valid.
+- Passwords should be securely hashed before storage.
+
 ## Technologies Used
 
 - Java
